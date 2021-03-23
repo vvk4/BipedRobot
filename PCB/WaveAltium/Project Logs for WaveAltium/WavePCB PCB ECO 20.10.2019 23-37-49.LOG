@@ -1,0 +1,6 @@
+Added Component: Designator=LED?(LED_LTW-C193TS5)
+Added Pin To Net: NetName=VCC Pin=LED?-1
+Added Pin To Net: NetName=NetLED?_2 Pin=LED?-2
+Added Pin To Net: NetName=NetLED?_2 Pin=U1-12
+Added Net: Name=NetLED?_2
+Added Member To Class: ClassName=WaveSch Member=Component LED? Part Number: LTST-C191TGKT

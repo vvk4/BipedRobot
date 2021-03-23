@@ -1,0 +1,13 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+Y1         ABLS_Series         117.094mm      84.455mm     117.094mm      84.455mm     117.094mm      79.756mm  T         90.00 Part Number: ABLS-7.3728MHZ-CL-RESR-A-1-G-F
+VD2        MELF_SOD-80           72.39mm      90.678mm       72.39mm      90.678mm     70.6247mm      90.678mm  T          0.00 LL4148-GS08    
+VD1        MELF_SOD-80          96.774mm      90.678mm      96.774mm      90.678mm     95.0087mm      90.678mm  T          0.00 LL4148-GS08    
+U1         SOIC28-W_MC          86.741mm      82.042mm      86.741mm      82.042mm     82.2198mm      90.297mm  T          0.00 PIC18F25K20-I/SO
+R1         RC0603N             126.746mm      91.059mm     126.746mm      91.059mm    125.9682mm      91.059mm  T          0.00 Part Number: ERA-3AEB101V
+P3         HDR1X10              77.597mm      79.121mm      77.597mm      67.691mm      77.597mm      67.691mm  T         90.00 Header 10      
+P2         HDR1X5              111.379mm      85.471mm     111.379mm      80.391mm     111.379mm      80.391mm  T         90.00 Header 5       
+P1         HDR1X4              122.555mm      86.741mm     122.555mm      82.931mm     122.555mm      82.931mm  T         90.00 Header 4       
+C2         CAPT3216N            88.011mm     100.584mm      88.011mm     100.584mm     88.9889mm     100.584mm  B        180.00 T491A106K006AT 
+C1         0603                107.061mm      91.059mm     107.061mm      91.059mm    106.2609mm      91.059mm  T          0.00 Part Number: 0603ZC224JAT2A
+

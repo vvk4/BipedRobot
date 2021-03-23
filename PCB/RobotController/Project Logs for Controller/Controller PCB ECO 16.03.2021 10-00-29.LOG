@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=NetC97_2 Pin=U26-5
+Added Pin To Net: NetName=NetC97_2 Pin=U26-4
+Added Pin To Net: NetName=NetU26_5 Pin=U26-5
+Added Pin To Net: NetName=NetU26_5 Pin=X11-1
+Added Net: Name=NetU26_5
+Added Member To Class: ClassName=Controller Member=Component R34 76.8k
+Added Member To Class: ClassName=Controller Member=Component R35 90.9k
+Added Member To Class: ClassName=Controller Member=Component R36 10
+Added Member To Class: ClassName=Controller Member=Component R37 10
+Added Member To Class: ClassName=Controller Member=Component R38 10
+Added Member To Class: ClassName=Controller Member=Component R39 10
+Added Member To Class: ClassName=Controller Member=Component R40 47k
+Added Member To Class: ClassName=Controller Member=Component R41 15k
+Added Member To Class: ClassName=Controller Member=Component R42 76.8k
+Added Member To Class: ClassName=Controller Member=Component R43 90.9k
+Added Member To Class: ClassName=Controller Member=Component R44 10
+Added Member To Class: ClassName=Controller Member=Component R45 10
+Added Member To Class: ClassName=Controller Member=Component R46 10
+Added Member To Class: ClassName=Controller Member=Component R47 10
+Added Member To Class: ClassName=Controller Member=Component R48 470
+Added Member To Class: ClassName=Controller Member=Component R49 470
+Added Member To Class: ClassName=Controller Member=Component R50 10
+Added Member To Class: ClassName=Controller Member=Component R51 10
+Added Member To Class: ClassName=Controller Member=Component R52 10
+Added Member To Class: ClassName=Controller Member=Component R53 10
+Added Room: Name=Controller

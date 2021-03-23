@@ -1,0 +1,19 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~WaveAltium.PrjPCB|ReportField=ProjectFullPath~C:\Prog\BipedRobot\WaveAltium\WaveAltium.PrjPCB|ReportField=Title~Bill of Materials For Project [WaveAltium.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~29|ReportField=ReportTime~20:44:19|ReportField=ReportDate~03.03.2021|ReportField=ReportDateTime~03.03.2021 20:44:19|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~03.03.2021|ReportField=CurrentTime~20:27:11|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Prog\BipedRobot\WaveAltium\WaveSch.SchDoc|ReportField=DocumentName~WaveSch.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~02.03.2021|ReportField=Organization~|ReportField=ProjectName~WaveAltium.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~WaveAltium.PrjPCB|ReportField=DataSourceFullPath~C:\Prog\BipedRobot\WaveAltium\WaveAltium.PrjPCB|ReportField=PCBConfigurationName~Default Configuration|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|293D475X9020A2TE3|No Description Available|C1, C13|CAPT3216N_KEM|T491A476M006AT|2
+2|0.1uF|No Description Available|C2, C3, C5, C8, C9, C10, C11, C12, C14|0603-L|0603ZC224JAT2A|9
+3|T491A476M006AT|No Description Available|C4|CAPT3216N_KEM|T491A476M006AT|1
+4|20pF|No Description Available|C6, C7|0603-L|0603ZC224JAT2A|2
+5|742792651|No Description Available|L1|IND_BLM18_0603|BLM18BB331SN1D|1
+6|LTST-C191TGKT|No Description Available|LED1|LED_LTW-C193TS5_|LTST-C191TGKT|1
+7|470|No Description Available|R1|RC0603N|ERA-3AEB101V|1
+8|120|No Description Available|R2|RC0603N|ERA-3AEB101V|1
+9|10k|No Description Available|R3|RC0603N|ERA-3AEB101V|1
+10|LF33CDT-TRY|No Description Available|U1|DPAK_STM|LF33CDT-TRY|1
+11|STM32F303CBT6|No Description Available|U2|LQFP-48_STM|STM32F303CCT6|1
+12|8.000MHZ HC49/4H/30/|No Description Available|U3|HC49-4H|8.000MHZ HC49/4H|1
+13|MCP2562FD-E/SN|No Description Available|U4|SOIC8-N_MC_MCH|MCP2562FD-E/SN|1
+14|SM6T18CA|No Description Available|VD1|SMB_STM|SM6T18CA|1
+15|PLS6R|No Description Available|X1|PLS-6R|PLS6R|1
+16|B4B-XH-A (LF)(SN)|No Description Available|X2, X3|CONN_B4B-XH-A (L|B4B-XH-A (LF)(SN|2
+17|GY9250||X4|GY9250|GY9250|1
+18|PLS10|No Description Available|X5|PLS-8|PLS6R|1

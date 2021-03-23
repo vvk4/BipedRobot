@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=NetC57_2 Pin=U18-5
+Removed Pin From Net: NetName=NetC58_2 Pin=U19-5
+Removed Pin From Net: NetName=NetC96_2 Pin=U25-5
+Added Pin To Net: NetName=NetC57_2 Pin=U18-4
+Added Pin To Net: NetName=NetC58_2 Pin=U19-4
+Added Pin To Net: NetName=NetC96_2 Pin=U25-4
+Added Pin To Net: NetName=NetU18_5 Pin=U18-5
+Added Pin To Net: NetName=NetU18_5 Pin=X8-1
+Added Net: Name=NetU18_5
+Added Pin To Net: NetName=NetU19_5 Pin=U19-5
+Added Pin To Net: NetName=NetU19_5 Pin=X9-1
+Added Net: Name=NetU19_5
+Added Pin To Net: NetName=NetU25_5 Pin=U25-5
+Added Pin To Net: NetName=NetU25_5 Pin=X10-1
+Added Net: Name=NetU25_5
+Added Room: Name=Controller

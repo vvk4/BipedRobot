@@ -1,0 +1,21 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [WaveAltium.PrjPCB]
+   Generated File[WavePCB.GTL]
+   Generated File[WavePCB.GBL]
+   Generated File[WavePCB.GTO]
+   Generated File[WavePCB.GTP]
+   Generated File[WavePCB.GTS]
+   Generated File[WavePCB.GBS]
+   Generated File[WavePCB.GBP]
+   Generated File[WavePCB.GBO]
+   Generated File[WavePCB.GM3]
+   Generated File[WavePCB.RUL]
+   Generated File[WavePCB.EXTREP]
+   Generated File[WavePCB.REP]
+
+
+Files Generated   : 12
+Documents Printed : 0
+
+Finished Output Generation At 14:52:40 On 04.03.2021

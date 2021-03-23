@@ -1,0 +1,228 @@
+Removed Pin From Net: NetName=PWMF_ML1 Pin=R1-1
+Removed Pin From Net: NetName=GND Pin=R1-2
+Removed Pin From Net: NetName=PWMF_ML2 Pin=R3-1
+Removed Pin From Net: NetName=GND Pin=R3-2
+Removed Pin From Net: NetName=Lo1_ML1 Pin=R5-1
+Removed Pin From Net: NetName=GND Pin=R5-2
+Removed Pin From Net: NetName=Lo1_ML2 Pin=R6-1
+Removed Pin From Net: NetName=GND Pin=R6-2
+Removed Pin From Net: NetName=PWMB_ML1 Pin=R12-1
+Removed Pin From Net: NetName=GND Pin=R12-2
+Removed Pin From Net: NetName=PWMB_ML2 Pin=R14-1
+Removed Pin From Net: NetName=GND Pin=R14-2
+Removed Pin From Net: NetName=Lo2_ML1 Pin=R16-1
+Removed Pin From Net: NetName=GND Pin=R16-2
+Removed Pin From Net: NetName=Lo2_ML2 Pin=R17-1
+Removed Pin From Net: NetName=GND Pin=R17-2
+Removed Pin From Net: NetName=PWMF_ML3 Pin=R20-1
+Removed Pin From Net: NetName=GND Pin=R20-2
+Removed Pin From Net: NetName=PWMF_ML4 Pin=R22-1
+Removed Pin From Net: NetName=GND Pin=R22-2
+Removed Pin From Net: NetName=Lo1_ML3 Pin=R24-1
+Removed Pin From Net: NetName=GND Pin=R24-2
+Removed Pin From Net: NetName=Lo1_ML4 Pin=R25-1
+Removed Pin From Net: NetName=GND Pin=R25-2
+Removed Pin From Net: NetName=PWMB_ML3 Pin=R30-1
+Removed Pin From Net: NetName=GND Pin=R30-2
+Removed Pin From Net: NetName=PWMB_ML4 Pin=R32-1
+Removed Pin From Net: NetName=GND Pin=R32-2
+Removed Pin From Net: NetName=Lo2_ML3 Pin=R34-1
+Removed Pin From Net: NetName=GND Pin=R34-2
+Removed Pin From Net: NetName=Lo2_ML4 Pin=R35-1
+Removed Pin From Net: NetName=GND Pin=R35-2
+Removed Pin From Net: NetName=PWMF_MR1 Pin=R42-1
+Removed Pin From Net: NetName=GND Pin=R42-2
+Removed Pin From Net: NetName=PWMF_MR2 Pin=R44-1
+Removed Pin From Net: NetName=GND Pin=R44-2
+Removed Pin From Net: NetName=Lo1_MR1 Pin=R46-1
+Removed Pin From Net: NetName=GND Pin=R46-2
+Removed Pin From Net: NetName=Lo1_MR2 Pin=R47-1
+Removed Pin From Net: NetName=GND Pin=R47-2
+Removed Pin From Net: NetName=PWMB_MR1 Pin=R56-1
+Removed Pin From Net: NetName=GND Pin=R56-2
+Removed Pin From Net: NetName=PWMB_MR2 Pin=R58-1
+Removed Pin From Net: NetName=GND Pin=R58-2
+Removed Pin From Net: NetName=Lo2_MR1 Pin=R60-1
+Removed Pin From Net: NetName=GND Pin=R60-2
+Removed Pin From Net: NetName=Lo2_MR2 Pin=R61-1
+Removed Pin From Net: NetName=GND Pin=R61-2
+Removed Pin From Net: NetName=PWMF_MR3 Pin=R68-1
+Removed Pin From Net: NetName=GND Pin=R68-2
+Removed Pin From Net: NetName=PWMF_MR4 Pin=R70-1
+Removed Pin From Net: NetName=GND Pin=R70-2
+Removed Pin From Net: NetName=Lo1_MR3 Pin=R72-1
+Removed Pin From Net: NetName=GND Pin=R72-2
+Removed Pin From Net: NetName=Lo1_MR4 Pin=R73-1
+Removed Pin From Net: NetName=GND Pin=R73-2
+Removed Pin From Net: NetName=PWMB_MR3 Pin=R78-1
+Removed Pin From Net: NetName=GND Pin=R78-2
+Removed Pin From Net: NetName=PWMB_MR4 Pin=R80-1
+Removed Pin From Net: NetName=GND Pin=R80-2
+Removed Pin From Net: NetName=Lo2_MR3 Pin=R82-1
+Removed Pin From Net: NetName=GND Pin=R82-2
+Removed Pin From Net: NetName=Lo2_MR4 Pin=R83-1
+Removed Pin From Net: NetName=GND Pin=R83-2
+Removed Member From Class: ClassName=Controller Member=R54
+Removed Member From Class: ClassName=Controller Member=R55
+Removed Member From Class: ClassName=Controller Member=R56
+Removed Member From Class: ClassName=Controller Member=R57
+Removed Member From Class: ClassName=Controller Member=R58
+Removed Member From Class: ClassName=Controller Member=R59
+Removed Member From Class: ClassName=Controller Member=R60
+Removed Member From Class: ClassName=Controller Member=R61
+Removed Member From Class: ClassName=Controller Member=R62
+Removed Member From Class: ClassName=Controller Member=R63
+Removed Member From Class: ClassName=Controller Member=R64
+Removed Member From Class: ClassName=Controller Member=R65
+Removed Member From Class: ClassName=Controller Member=R66
+Removed Member From Class: ClassName=Controller Member=R67
+Removed Member From Class: ClassName=Controller Member=R68
+Removed Member From Class: ClassName=Controller Member=R69
+Removed Member From Class: ClassName=Controller Member=R70
+Removed Member From Class: ClassName=Controller Member=R71
+Removed Member From Class: ClassName=Controller Member=R72
+Removed Member From Class: ClassName=Controller Member=R73
+Removed Member From Class: ClassName=Controller Member=R74
+Removed Member From Class: ClassName=Controller Member=R75
+Removed Member From Class: ClassName=Controller Member=R76
+Removed Member From Class: ClassName=Controller Member=R77
+Removed Member From Class: ClassName=Controller Member=R78
+Removed Member From Class: ClassName=Controller Member=R79
+Removed Member From Class: ClassName=Controller Member=R80
+Removed Member From Class: ClassName=Controller Member=R81
+Removed Member From Class: ClassName=Controller Member=R82
+Removed Member From Class: ClassName=Controller Member=R83
+Removed Member From Class: ClassName=Controller Member=R84
+Removed Member From Class: ClassName=Controller Member=R85
+Change Component Designator: OldDesignator=R2 NewDesignator=R1
+Change Component Designator: OldDesignator=R4 NewDesignator=R2
+Change Component Designator: OldDesignator=R7 NewDesignator=R3
+Change Component Designator: OldDesignator=R8 NewDesignator=R4
+Change Component Designator: OldDesignator=R9 NewDesignator=R5
+Change Component Designator: OldDesignator=R10 NewDesignator=R6
+Change Component Designator: OldDesignator=R11 NewDesignator=R7
+Change Component Designator: OldDesignator=R13 NewDesignator=R8
+Change Component Designator: OldDesignator=R15 NewDesignator=R9
+Change Component Designator: OldDesignator=R18 NewDesignator=R10
+Change Component Designator: OldDesignator=R19 NewDesignator=R11
+Change Component Designator: OldDesignator=R21 NewDesignator=R12
+Change Component Designator: OldDesignator=R23 NewDesignator=R13
+Change Component Designator: OldDesignator=R26 NewDesignator=R14
+Change Component Designator: OldDesignator=R27 NewDesignator=R15
+Change Component Designator: OldDesignator=R28 NewDesignator=R16
+Change Component Designator: OldDesignator=R29 NewDesignator=R17
+Change Component Designator: OldDesignator=R31 NewDesignator=R18
+Change Component Designator: OldDesignator=R33 NewDesignator=R19
+Change Component Designator: OldDesignator=R36 NewDesignator=R20
+Change Component Designator: OldDesignator=R37 NewDesignator=R21
+Change Component Designator: OldDesignator=R38 NewDesignator=R22
+Change Component Designator: OldDesignator=R39 NewDesignator=R23
+Change Component Designator: OldDesignator=R40 NewDesignator=R24
+Change Component Designator: OldDesignator=R41 NewDesignator=R25
+Change Component Designator: OldDesignator=R43 NewDesignator=R26
+Change Component Designator: OldDesignator=R45 NewDesignator=R27
+Change Component Designator: OldDesignator=R48 NewDesignator=R28
+Change Component Designator: OldDesignator=R49 NewDesignator=R29
+Change Component Designator: OldDesignator=R50 NewDesignator=R30
+Change Component Designator: OldDesignator=R51 NewDesignator=R31
+Change Component Designator: OldDesignator=R52 NewDesignator=R32
+Change Component Designator: OldDesignator=R53 NewDesignator=R33
+Change Component Designator: OldDesignator=R54 NewDesignator=R34
+Change Component Designator: OldDesignator=R55 NewDesignator=R35
+Change Component Designator: OldDesignator=R57 NewDesignator=R36
+Change Component Designator: OldDesignator=R59 NewDesignator=R37
+Change Component Designator: OldDesignator=R62 NewDesignator=R38
+Change Component Designator: OldDesignator=R63 NewDesignator=R39
+Change Component Designator: OldDesignator=R64 NewDesignator=R40
+Change Component Designator: OldDesignator=R65 NewDesignator=R41
+Change Component Designator: OldDesignator=R66 NewDesignator=R42
+Change Component Designator: OldDesignator=R67 NewDesignator=R43
+Change Component Designator: OldDesignator=R69 NewDesignator=R44
+Change Component Designator: OldDesignator=R71 NewDesignator=R45
+Change Component Designator: OldDesignator=R74 NewDesignator=R46
+Change Component Designator: OldDesignator=R75 NewDesignator=R47
+Change Component Designator: OldDesignator=R76 NewDesignator=R48
+Change Component Designator: OldDesignator=R77 NewDesignator=R49
+Change Component Designator: OldDesignator=R79 NewDesignator=R50
+Change Component Designator: OldDesignator=R81 NewDesignator=R51
+Change Component Designator: OldDesignator=R84 NewDesignator=R52
+Change Component Designator: OldDesignator=R85 NewDesignator=R53
+Change Net Name : Old Net Name=NetR2_1 New Net Name=NetR1_1
+Change Net Name : Old Net Name=NetR2_2 New Net Name=NetR1_2
+Change Net Name : Old Net Name=NetR4_1 New Net Name=NetR2_1
+Change Net Name : Old Net Name=NetR4_2 New Net Name=NetR2_2
+Change Net Name : Old Net Name=NetR7_1 New Net Name=NetR3_1
+Change Net Name : Old Net Name=NetR7_2 New Net Name=NetR3_2
+Change Net Name : Old Net Name=NetR8_1 New Net Name=NetR4_1
+Change Net Name : Old Net Name=NetR8_2 New Net Name=NetR4_2
+Change Net Name : Old Net Name=NetR10_1 New Net Name=NetR6_1
+Change Net Name : Old Net Name=NetR11_1 New Net Name=NetR7_1
+Change Net Name : Old Net Name=NetR13_1 New Net Name=NetR8_1
+Change Net Name : Old Net Name=NetR13_2 New Net Name=NetR8_2
+Change Net Name : Old Net Name=NetR15_1 New Net Name=NetR9_1
+Change Net Name : Old Net Name=NetR15_2 New Net Name=NetR9_2
+Change Net Name : Old Net Name=NetR18_1 New Net Name=NetR10_1
+Change Net Name : Old Net Name=NetR18_2 New Net Name=NetR10_2
+Change Net Name : Old Net Name=NetR19_1 New Net Name=NetR11_1
+Change Net Name : Old Net Name=NetR19_2 New Net Name=NetR11_2
+Change Net Name : Old Net Name=NetR21_1 New Net Name=NetR12_1
+Change Net Name : Old Net Name=NetR21_2 New Net Name=NetR12_2
+Change Net Name : Old Net Name=NetR23_1 New Net Name=NetR13_1
+Change Net Name : Old Net Name=NetR23_2 New Net Name=NetR13_2
+Change Net Name : Old Net Name=NetR26_1 New Net Name=NetR14_1
+Change Net Name : Old Net Name=NetR26_2 New Net Name=NetR14_2
+Change Net Name : Old Net Name=NetR27_1 New Net Name=NetR15_1
+Change Net Name : Old Net Name=NetR27_2 New Net Name=NetR15_2
+Change Net Name : Old Net Name=NetR28_1 New Net Name=NetR16_1
+Change Net Name : Old Net Name=NetR29_1 New Net Name=NetR17_1
+Change Net Name : Old Net Name=NetR31_1 New Net Name=NetR18_1
+Change Net Name : Old Net Name=NetR31_2 New Net Name=NetR18_2
+Change Net Name : Old Net Name=NetR33_1 New Net Name=NetR19_1
+Change Net Name : Old Net Name=NetR33_2 New Net Name=NetR19_2
+Change Net Name : Old Net Name=NetR36_2 New Net Name=NetR20_2
+Change Net Name : Old Net Name=NetR37_1 New Net Name=NetR21_1
+Change Net Name : Old Net Name=NetR37_2 New Net Name=NetR21_2
+Change Net Name : Old Net Name=NetR38_1 New Net Name=NetR22_1
+Change Net Name : Old Net Name=NetR38_2 New Net Name=NetR22_2
+Change Net Name : Old Net Name=NetR41_1 New Net Name=NetR25_1
+Change Net Name : Old Net Name=NetR43_1 New Net Name=NetR26_1
+Change Net Name : Old Net Name=NetR43_2 New Net Name=NetR26_2
+Change Net Name : Old Net Name=NetR45_1 New Net Name=NetR27_1
+Change Net Name : Old Net Name=NetR45_2 New Net Name=NetR27_2
+Change Net Name : Old Net Name=NetR48_2 New Net Name=NetR28_2
+Change Net Name : Old Net Name=NetR49_1 New Net Name=NetR29_1
+Change Net Name : Old Net Name=NetR49_2 New Net Name=NetR29_2
+Change Net Name : Old Net Name=NetR50_1 New Net Name=NetR30_1
+Change Net Name : Old Net Name=NetR50_2 New Net Name=NetR30_2
+Change Net Name : Old Net Name=NetR52_1 New Net Name=NetR32_1
+Change Net Name : Old Net Name=NetR53_1 New Net Name=NetR33_1
+Change Net Name : Old Net Name=NetR55_1 New Net Name=NetR35_1
+Change Net Name : Old Net Name=NetR57_1 New Net Name=NetR36_1
+Change Net Name : Old Net Name=NetR57_2 New Net Name=NetR36_2
+Change Net Name : Old Net Name=NetR59_1 New Net Name=NetR37_1
+Change Net Name : Old Net Name=NetR59_2 New Net Name=NetR37_2
+Change Net Name : Old Net Name=NetR62_1 New Net Name=NetR38_1
+Change Net Name : Old Net Name=NetR62_2 New Net Name=NetR38_2
+Change Net Name : Old Net Name=NetR63_1 New Net Name=NetR39_1
+Change Net Name : Old Net Name=NetR63_2 New Net Name=NetR39_2
+Change Net Name : Old Net Name=NetR64_2 New Net Name=NetR40_2
+Change Net Name : Old Net Name=NetR67_1 New Net Name=NetR43_1
+Change Net Name : Old Net Name=NetR69_1 New Net Name=NetR44_1
+Change Net Name : Old Net Name=NetR69_2 New Net Name=NetR44_2
+Change Net Name : Old Net Name=NetR71_1 New Net Name=NetR45_1
+Change Net Name : Old Net Name=NetR71_2 New Net Name=NetR45_2
+Change Net Name : Old Net Name=NetR74_1 New Net Name=NetR46_1
+Change Net Name : Old Net Name=NetR74_2 New Net Name=NetR46_2
+Change Net Name : Old Net Name=NetR75_1 New Net Name=NetR47_1
+Change Net Name : Old Net Name=NetR75_2 New Net Name=NetR47_2
+Change Net Name : Old Net Name=NetR76_1 New Net Name=NetR48_1
+Change Net Name : Old Net Name=NetR77_1 New Net Name=NetR49_1
+Change Net Name : Old Net Name=NetR79_1 New Net Name=NetR50_1
+Change Net Name : Old Net Name=NetR79_2 New Net Name=NetR50_2
+Change Net Name : Old Net Name=NetR81_1 New Net Name=NetR51_1
+Change Net Name : Old Net Name=NetR81_2 New Net Name=NetR51_2
+Change Net Name : Old Net Name=NetR84_1 New Net Name=NetR52_1
+Change Net Name : Old Net Name=NetR84_2 New Net Name=NetR52_2
+Change Net Name : Old Net Name=NetR85_1 New Net Name=NetR53_1
+Change Net Name : Old Net Name=NetR85_2 New Net Name=NetR53_2
+Added Room: Name=Controller

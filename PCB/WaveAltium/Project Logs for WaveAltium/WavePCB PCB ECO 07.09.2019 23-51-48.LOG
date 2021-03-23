@@ -1,0 +1,15 @@
+Removed Member From Class: ClassName=WaveSch Member=U2
+Added Component: Designator=CR1(MELF_SOD-80)
+Added Pin To Net: NetName=NetCR1_1 Pin=CR1-1
+Added Pin To Net: NetName=NetCR1_1 Pin=U1-28
+Added Net: Name=NetCR1_1
+Added Pin To Net: NetName=NetCR1_2 Pin=CR1-2
+Added Pin To Net: NetName=NetCR1_2 Pin=U1-9
+Added Pin To Net: NetName=NetCR1_2 Pin=U1-10
+Added Pin To Net: NetName=NetCR1_2 Pin=U1-11
+Added Pin To Net: NetName=NetCR1_2 Pin=U1-12
+Added Pin To Net: NetName=NetCR1_2 Pin=U1-13
+Added Pin To Net: NetName=NetCR1_2 Pin=U1-14
+Added Net: Name=NetCR1_2
+Added Member To Class: ClassName=WaveSch Member=Component CR1 Part Number: LL4148-GS08
+Added Room: Name=WaveSch

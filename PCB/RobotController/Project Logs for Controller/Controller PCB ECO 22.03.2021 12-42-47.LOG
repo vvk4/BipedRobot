@@ -1,0 +1,364 @@
+Removed Pin From Net: NetName=PWMF_ML1 Pin=U1-1
+Removed Pin From Net: NetName=Lo1_ML1 Pin=U1-2
+Removed Pin From Net: NetName=GND Pin=U1-3
+Removed Pin From Net: NetName=NetR3_2 Pin=U1-4
+Removed Pin From Net: NetName=12V Pin=U1-5
+Removed Pin From Net: NetName=PWMF_ML2 Pin=U2-1
+Removed Pin From Net: NetName=Lo1_ML2 Pin=U2-2
+Removed Pin From Net: NetName=GND Pin=U2-3
+Removed Pin From Net: NetName=NetR4_2 Pin=U2-4
+Removed Pin From Net: NetName=12V Pin=U2-5
+Removed Pin From Net: NetName=PWMB_ML1 Pin=U6-1
+Removed Pin From Net: NetName=Lo2_ML1 Pin=U6-2
+Removed Pin From Net: NetName=GND Pin=U6-3
+Removed Pin From Net: NetName=NetR10_2 Pin=U6-4
+Removed Pin From Net: NetName=12V Pin=U6-5
+Removed Pin From Net: NetName=PWMB_ML2 Pin=U7-1
+Removed Pin From Net: NetName=Lo2_ML2 Pin=U7-2
+Removed Pin From Net: NetName=GND Pin=U7-3
+Removed Pin From Net: NetName=NetR11_2 Pin=U7-4
+Removed Pin From Net: NetName=12V Pin=U7-5
+Removed Pin From Net: NetName=PWMF_ML3 Pin=U8-1
+Removed Pin From Net: NetName=Lo1_ML3 Pin=U8-2
+Removed Pin From Net: NetName=GND Pin=U8-3
+Removed Pin From Net: NetName=NetR14_2 Pin=U8-4
+Removed Pin From Net: NetName=12V Pin=U8-5
+Removed Pin From Net: NetName=PWMF_ML4 Pin=U9-1
+Removed Pin From Net: NetName=Lo1_ML4 Pin=U9-2
+Removed Pin From Net: NetName=GND Pin=U9-3
+Removed Pin From Net: NetName=NetR15_2 Pin=U9-4
+Removed Pin From Net: NetName=12V Pin=U9-5
+Removed Pin From Net: NetName=PWMB_ML3 Pin=U12-1
+Removed Pin From Net: NetName=Lo2_ML3 Pin=U12-2
+Removed Pin From Net: NetName=GND Pin=U12-3
+Removed Pin From Net: NetName=NetR21_2 Pin=U12-4
+Removed Pin From Net: NetName=12V Pin=U12-5
+Removed Pin From Net: NetName=PWMB_ML4 Pin=U13-1
+Removed Pin From Net: NetName=Lo2_ML4 Pin=U13-2
+Removed Pin From Net: NetName=GND Pin=U13-3
+Removed Pin From Net: NetName=NetR22_2 Pin=U13-4
+Removed Pin From Net: NetName=12V Pin=U13-5
+Removed Pin From Net: NetName=PWMF_MR1 Pin=U15-1
+Removed Pin From Net: NetName=Lo1_MR1 Pin=U15-2
+Removed Pin From Net: NetName=GND Pin=U15-3
+Removed Pin From Net: NetName=NetR29_2 Pin=U15-4
+Removed Pin From Net: NetName=12V Pin=U15-5
+Removed Pin From Net: NetName=PWMF_MR2 Pin=U16-1
+Removed Pin From Net: NetName=Lo1_MR2 Pin=U16-2
+Removed Pin From Net: NetName=GND Pin=U16-3
+Removed Pin From Net: NetName=NetR30_2 Pin=U16-4
+Removed Pin From Net: NetName=12V Pin=U16-5
+Removed Pin From Net: NetName=PWMB_MR1 Pin=U20-1
+Removed Pin From Net: NetName=Lo2_MR1 Pin=U20-2
+Removed Pin From Net: NetName=GND Pin=U20-3
+Removed Pin From Net: NetName=NetR38_2 Pin=U20-4
+Removed Pin From Net: NetName=12V Pin=U20-5
+Removed Pin From Net: NetName=PWMB_MR2 Pin=U21-1
+Removed Pin From Net: NetName=Lo2_MR2 Pin=U21-2
+Removed Pin From Net: NetName=GND Pin=U21-3
+Removed Pin From Net: NetName=NetR39_2 Pin=U21-4
+Removed Pin From Net: NetName=12V Pin=U21-5
+Removed Pin From Net: NetName=PWMF_MR3 Pin=U23-1
+Removed Pin From Net: NetName=Lo1_MR3 Pin=U23-2
+Removed Pin From Net: NetName=GND Pin=U23-3
+Removed Pin From Net: NetName=NetR46_2 Pin=U23-4
+Removed Pin From Net: NetName=12V Pin=U23-5
+Removed Pin From Net: NetName=PWMF_MR4 Pin=U24-1
+Removed Pin From Net: NetName=Lo1_MR4 Pin=U24-2
+Removed Pin From Net: NetName=GND Pin=U24-3
+Removed Pin From Net: NetName=NetR47_2 Pin=U24-4
+Removed Pin From Net: NetName=12V Pin=U24-5
+Removed Pin From Net: NetName=PWMB_MR3 Pin=U27-1
+Removed Pin From Net: NetName=Lo2_MR3 Pin=U27-2
+Removed Pin From Net: NetName=GND Pin=U27-3
+Removed Pin From Net: NetName=NetR52_2 Pin=U27-4
+Removed Pin From Net: NetName=12V Pin=U27-5
+Removed Pin From Net: NetName=PWMB_MR4 Pin=U28-1
+Removed Pin From Net: NetName=Lo2_MR4 Pin=U28-2
+Removed Pin From Net: NetName=GND Pin=U28-3
+Removed Pin From Net: NetName=NetR53_2 Pin=U28-4
+Removed Pin From Net: NetName=12V Pin=U28-5
+Change Component Comment : Designator=R5 Old Comment=120k New Comment=120
+Change Component Comment : Designator=U1 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U2 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U6 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U7 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U8 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U9 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U12 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U13 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U15 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U16 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U20 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U21 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U23 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U24 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U27 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Comment : Designator=U28 Old Comment=IRS2186STRPBF New Comment=IR2109
+Change Component Designator: OldDesignator=Bat NewDesignator=X5
+Change Component Designator: OldDesignator=ML1 NewDesignator=X1
+Change Component Designator: OldDesignator=ML2 NewDesignator=X2
+Change Component Designator: OldDesignator=ML3 NewDesignator=X6
+Change Component Designator: OldDesignator=ML4 NewDesignator=X7
+Change Component Designator: OldDesignator=MR1 NewDesignator=X8
+Change Component Designator: OldDesignator=MR2 NewDesignator=X9
+Change Component Designator: OldDesignator=MR3 NewDesignator=X10
+Change Component Designator: OldDesignator=MR4 NewDesignator=X11
+Change component parameters: Designator = "U1"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\FVDUEETL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U2"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\AJVOMQEB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U6"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\GVRDGWUW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U7"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\HETGSGEB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U8"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\NEDOTAKB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U9"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\XKUVTYWY"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U12"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\YNHLWHXO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U13"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\VYETBLPD"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U15"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\IROBALKI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U16"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\UIBWPKLI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U20"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\IVGIHXPH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U21"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\PLCVCVPP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U23"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\QRGDQGRH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U24"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\IUCRANML"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U27"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\OOIRVOQU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U28"; Footprint = "SOIC127P600X175-8N"; UniqueID = "\RCEURNQR"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "IR2109"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "SOIC-8 Infineon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/IRS2186STRPBF/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRS2186STRPBF/Infineon%20Technologies/view-part/563209/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=U1-1
+Added Pin To Net: NetName=PWMF_ML1 Pin=U1-2
+Added Pin To Net: NetName=Lo1_ML1 Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=NetR3_2 Pin=U1-5
+Added Pin To Net: NetName=12V Pin=U2-1
+Added Pin To Net: NetName=PWMF_ML2 Pin=U2-2
+Added Pin To Net: NetName=Lo1_ML2 Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=NetR4_2 Pin=U2-5
+Added Pin To Net: NetName=12V Pin=U6-1
+Added Pin To Net: NetName=PWMB_ML1 Pin=U6-2
+Added Pin To Net: NetName=Lo2_ML1 Pin=U6-3
+Added Pin To Net: NetName=GND Pin=U6-4
+Added Pin To Net: NetName=NetR10_2 Pin=U6-5
+Added Pin To Net: NetName=12V Pin=U7-1
+Added Pin To Net: NetName=PWMB_ML2 Pin=U7-2
+Added Pin To Net: NetName=Lo2_ML2 Pin=U7-3
+Added Pin To Net: NetName=GND Pin=U7-4
+Added Pin To Net: NetName=NetR11_2 Pin=U7-5
+Added Pin To Net: NetName=12V Pin=U8-1
+Added Pin To Net: NetName=PWMF_ML3 Pin=U8-2
+Added Pin To Net: NetName=Lo1_ML3 Pin=U8-3
+Added Pin To Net: NetName=GND Pin=U8-4
+Added Pin To Net: NetName=NetR14_2 Pin=U8-5
+Added Pin To Net: NetName=12V Pin=U9-1
+Added Pin To Net: NetName=PWMF_ML4 Pin=U9-2
+Added Pin To Net: NetName=Lo1_ML4 Pin=U9-3
+Added Pin To Net: NetName=GND Pin=U9-4
+Added Pin To Net: NetName=NetR15_2 Pin=U9-5
+Added Pin To Net: NetName=12V Pin=U12-1
+Added Pin To Net: NetName=PWMB_ML3 Pin=U12-2
+Added Pin To Net: NetName=Lo2_ML3 Pin=U12-3
+Added Pin To Net: NetName=GND Pin=U12-4
+Added Pin To Net: NetName=NetR21_2 Pin=U12-5
+Added Pin To Net: NetName=12V Pin=U13-1
+Added Pin To Net: NetName=PWMB_ML4 Pin=U13-2
+Added Pin To Net: NetName=Lo2_ML4 Pin=U13-3
+Added Pin To Net: NetName=GND Pin=U13-4
+Added Pin To Net: NetName=NetR22_2 Pin=U13-5
+Added Pin To Net: NetName=12V Pin=U15-1
+Added Pin To Net: NetName=PWMF_MR1 Pin=U15-2
+Added Pin To Net: NetName=Lo1_MR1 Pin=U15-3
+Added Pin To Net: NetName=GND Pin=U15-4
+Added Pin To Net: NetName=NetR29_2 Pin=U15-5
+Added Pin To Net: NetName=12V Pin=U16-1
+Added Pin To Net: NetName=PWMF_MR2 Pin=U16-2
+Added Pin To Net: NetName=Lo1_MR2 Pin=U16-3
+Added Pin To Net: NetName=GND Pin=U16-4
+Added Pin To Net: NetName=NetR30_2 Pin=U16-5
+Added Pin To Net: NetName=12V Pin=U20-1
+Added Pin To Net: NetName=PWMB_MR1 Pin=U20-2
+Added Pin To Net: NetName=Lo2_MR1 Pin=U20-3
+Added Pin To Net: NetName=GND Pin=U20-4
+Added Pin To Net: NetName=NetR38_2 Pin=U20-5
+Added Pin To Net: NetName=12V Pin=U21-1
+Added Pin To Net: NetName=PWMB_MR2 Pin=U21-2
+Added Pin To Net: NetName=Lo2_MR2 Pin=U21-3
+Added Pin To Net: NetName=GND Pin=U21-4
+Added Pin To Net: NetName=NetR39_2 Pin=U21-5
+Added Pin To Net: NetName=12V Pin=U23-1
+Added Pin To Net: NetName=PWMF_MR3 Pin=U23-2
+Added Pin To Net: NetName=Lo1_MR3 Pin=U23-3
+Added Pin To Net: NetName=GND Pin=U23-4
+Added Pin To Net: NetName=NetR46_2 Pin=U23-5
+Added Pin To Net: NetName=12V Pin=U24-1
+Added Pin To Net: NetName=PWMF_MR4 Pin=U24-2
+Added Pin To Net: NetName=Lo1_MR4 Pin=U24-3
+Added Pin To Net: NetName=GND Pin=U24-4
+Added Pin To Net: NetName=NetR47_2 Pin=U24-5
+Added Pin To Net: NetName=12V Pin=U27-1
+Added Pin To Net: NetName=PWMB_MR3 Pin=U27-2
+Added Pin To Net: NetName=Lo2_MR3 Pin=U27-3
+Added Pin To Net: NetName=GND Pin=U27-4
+Added Pin To Net: NetName=NetR52_2 Pin=U27-5
+Added Pin To Net: NetName=12V Pin=U28-1
+Added Pin To Net: NetName=PWMB_MR4 Pin=U28-2
+Added Pin To Net: NetName=Lo2_MR4 Pin=U28-3
+Added Pin To Net: NetName=GND Pin=U28-4
+Added Pin To Net: NetName=NetR53_2 Pin=U28-5
+Added Member To Class: ClassName=Controller Member=Component TB1 STM32F4DISCOVERY
+Added Room: Name=Controller

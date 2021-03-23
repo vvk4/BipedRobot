@@ -1,0 +1,11 @@
+Added Component: Designator=X4(GY9250)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+5V Pin=X4-1
+Added Pin To Net: NetName=GND Pin=X4-2
+Added Pin To Net: NetName=SPI1_SCK Pin=X4-3
+Added Pin To Net: NetName=SPI1_MOSI Pin=X4-4
+Added Pin To Net: NetName=SPI1_MISO Pin=X4-7
+Added Pin To Net: NetName=INT Pin=X4-8
+Added Pin To Net: NetName=CS Pin=X4-9
+Added Member To Class: ClassName=WaveSch Member=Component X4 GY9250
+Added Room: Name=WaveSch

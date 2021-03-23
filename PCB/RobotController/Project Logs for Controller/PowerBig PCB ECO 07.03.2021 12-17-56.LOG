@@ -1,0 +1,56 @@
+Removed Pin From Net: NetName=NetC15_2 Pin=C15-2
+Removed Member From Class: ClassName=PowerBig Member=C?
+Change Component Designator: OldDesignator=C1 NewDesignator=C2
+Change Component Designator: OldDesignator=C4 NewDesignator=C5
+Change Component Designator: OldDesignator=C5 NewDesignator=C7
+Change Component Designator: OldDesignator=C15 NewDesignator=C19
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=CR? NewDesignator=CR1
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=VD? NewDesignator=VD1
+Added Component: Designator=J2(ESP32-DEVKITV1)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ESP32%20DEVKIT%20V1/Do%20it/view-part/5659245/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Do it"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ESP32 DEVKIT V1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ESP32%20DEVKIT%20V1/Do%20it/view-part/5659245/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC19_2 Pin=C19-2
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Net: Name=NetC7_2
+Added Net: Name=NetC8_1
+Added Net: Name=NetC12_2
+Added Net: Name=NetC14_1
+Added Net: Name=NetC20_1
+Added Net: Name=NetC20_2
+Added Net: Name=NetC21_2
+Added Net: Name=NetC25_2
+Added Net: Name=NetR5_1
+Added Net: Name=NetR9_1
+Added Net: Name=NetR10_2
+Added Net: Name=NetR12_1
+Added Net: Name=NetR14_1
+Added Net: Name=NetR18_1
+Added Net: Name=NetR18_2
+Added Net: Name=NetR20_2
+Added Net: Name=NetR21_2
+Added Net: Name=NetR22_2
+Added Net: Name=NetR25_2
+Added Net: Name=NetR29_1
+Added Net: Name=NetR31_1
+Added Net: Name=NetR33_1
+Added Net: Name=NetU3_3
+Added Net: Name=NetU6_1
+Added Net: Name=NetU13_3
+Added Net: Name=NetVD5_1
+Added Member To Class: ClassName=PowerBig Member=Component C2 22n
+Added Member To Class: ClassName=PowerBig Member=Component C7 1uF
+Added Member To Class: ClassName=PowerBig Member=Component C19 1uF
+Added Member To Class: ClassName=PowerBig Member=Component J2 ESP32DEVKITV1

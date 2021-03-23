@@ -1,0 +1,12 @@
+Added Pin To Net: NetName=+3.3V Pin=U1-10
+Added Pin To Net: NetName=+3.3V Pin=U1-17
+Added Net: Name=+3.3V
+Added Member To Class: ClassName=WaveSch Member=Component C1 Part Number: 0603ZC224JAT2A
+Added Member To Class: ClassName=WaveSch Member=Component P1 Header 4
+Added Member To Class: ClassName=WaveSch Member=Component P2 Header 5
+Added Member To Class: ClassName=WaveSch Member=Component P3 Header 10
+Added Member To Class: ClassName=WaveSch Member=Component U1 PIC18F25K20-I/SO
+Added Member To Class: ClassName=WaveSch Member=Component VD1 LL4148-GS08
+Added Member To Class: ClassName=WaveSch Member=Component VD2 LL4148-GS08
+Added Member To Class: ClassName=WaveSch Member=Component Y1 Part Number: ABLS-7.3728MHZ-CL-RESR-A-1-G-F
+Added Room: Name=WaveSch

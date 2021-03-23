@@ -1,0 +1,11 @@
+Added Component: Designator=U1(SOIC28-W_MC)
+Added Component: Designator=U2(SOIC28-W_MC)
+Added Pin To Net: NetName=NetU1_16 Pin=U1-16
+Added Pin To Net: NetName=NetU1_16 Pin=U2-28
+Added Net: Name=NetU1_16
+Added Pin To Net: NetName=NetU1_24 Pin=U1-24
+Added Pin To Net: NetName=NetU1_24 Pin=U2-24
+Added Pin To Net: NetName=NetU1_24 Pin=U2-25
+Added Net: Name=NetU1_24
+Added Class: Name=WaveSch
+Added Room: Name=WaveSch

@@ -1,0 +1,16 @@
+Added Component: Designator=X1(PLS-6R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_UL_Team"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PLS6R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "JST"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=SWO Pin=X1-1
+Added Pin To Net: NetName=SWDIO Pin=X1-2
+Added Pin To Net: NetName=SWCLK Pin=X1-3
+Added Pin To Net: NetName=GND Pin=X1-4
+Added Pin To Net: NetName=NRST Pin=X1-5
+Added Pin To Net: NetName=+3.3V Pin=X1-6
+Added Member To Class: ClassName=WaveSch Member=Component X1 PLS6R

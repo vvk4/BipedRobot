@@ -1,0 +1,33 @@
+Added Component: Designator=C1(0603)
+Added Component: Designator=C2(CAPT3216N)
+Added Component: Designator=P1(HDR1X4)
+Added Component: Designator=P2(HDR1X5)
+Added Component: Designator=P3(HDR1X10)
+Added Component: Designator=R1(RC0603N)
+Added Component: Designator=U1(SOIC28-W_MC)
+Added Component: Designator=VD1(MELF_SOD-80)
+Added Component: Designator=VD2(MELF_SOD-80)
+Added Component: Designator=Y1(ABLS_Series)
+Added Pin To Net: NetName=+3.3V Pin=U1-10
+Added Pin To Net: NetName=+3.3V Pin=U1-17
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=U1-2
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=U1-1
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetU1_6 Pin=U1-6
+Added Pin To Net: NetName=NetU1_6 Pin=VD1-2
+Added Net: Name=NetU1_6
+Added Pin To Net: NetName=NetU1_27 Pin=U1-27
+Added Pin To Net: NetName=NetU1_27 Pin=VD1-1
+Added Net: Name=NetU1_27
+Added Pin To Net: NetName=NetU1_28 Pin=U1-28
+Added Pin To Net: NetName=NetU1_28 Pin=VD2-1
+Added Net: Name=NetU1_28
+Added Pin To Net: NetName=VCC Pin=U1-14
+Added Pin To Net: NetName=VCC Pin=VD2-2
+Added Net: Name=VCC
+Added Class: Name=WaveSch
+Added Room: Name=WaveSch
