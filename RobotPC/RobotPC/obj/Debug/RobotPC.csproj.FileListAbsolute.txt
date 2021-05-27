@@ -1,0 +1,10 @@
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\bin\Debug\RobotPC.exe.config
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\bin\Debug\RobotPC.exe
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\bin\Debug\RobotPC.pdb
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\obj\Debug\RobotPC.csprojAssemblyReference.cache
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\obj\Debug\RobotPC.Form1.resources
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\obj\Debug\RobotPC.Properties.Resources.resources
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\obj\Debug\RobotPC.csproj.GenerateResource.cache
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\obj\Debug\RobotPC.csproj.CoreCompileInputs.cache
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\obj\Debug\RobotPC.exe
+C:\Prog\BipedRobot\RobotGit\RobotPC\RobotPC\obj\Debug\RobotPC.pdb

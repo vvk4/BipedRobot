@@ -80,8 +80,8 @@ all: main-build
 main-build: RobotController.elf secondary-outputs
 
 # Tool invocations
-RobotController.elf: $(OBJS) $(USER_OBJS) C:\Prog\BipedRobot\RobotController\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "RobotController.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Prog\BipedRobot\RobotController\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotController.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+RobotController.elf: $(OBJS) $(USER_OBJS) C:\Prog\BipedRobot\RobotGit\ControllerPrg\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "RobotController.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Prog\BipedRobot\RobotGit\ControllerPrg\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RobotController.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

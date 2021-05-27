@@ -1,0 +1,2 @@
+flash.c:7:6:FlashReadAll	0	static
+flash.c:24:6:FlashWriteAll	24	static

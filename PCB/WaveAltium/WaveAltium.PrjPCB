@@ -73,23 +73,6 @@ GenerateClassCluster=0
 DocumentUniqueId=CMRMYBDN
 
 [Document3]
-DocumentPath=E:\prog\Dron\MODELS\FERRITE_BEAD\742792651.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MBEKUTTS
-
-[Document4]
 DocumentPath=Models\led\LTST-C191TGKT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -106,7 +89,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DTRFBLJY
 
-[Document5]
+[Document4]
 DocumentPath=Models\Cap0603\Cap0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -123,7 +106,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OSWJUUEF
 
-[Document6]
+[Document5]
 DocumentPath=Models\led\LTST-C191TGKT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -140,24 +123,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UIMRBIMU
 
-[Document7]
-DocumentPath=E:\prog\Dron\MODELS\FERRITE_BEAD\742792651.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LTXMXGWQ
-
-[Document8]
+[Document6]
 DocumentPath=Models\QuartzThroughHole\QuartzThrough.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -174,7 +140,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VVLBAEPQ
 
-[Document9]
+[Document7]
 DocumentPath=Models\QuartzThroughHole\QuartzThrough.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -191,7 +157,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NWRGAVPX
 
-[Document10]
+[Document8]
 DocumentPath=Models\STM32F303CB\STM32F303CB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -208,7 +174,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JLTBYFBT
 
-[Document11]
+[Document9]
 DocumentPath=Models\T491A476M006AT\T491A476M006AT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -225,7 +191,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KFMICNUD
 
-[Document12]
+[Document10]
 DocumentPath=Models\SM6T18CA\SM6T18CA.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -242,7 +208,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VTQBYVUW
 
-[Document13]
+[Document11]
 DocumentPath=Models\Res0603\Res0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -259,7 +225,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BIFRWNGL
 
-[Document14]
+[Document12]
 DocumentPath=Models\STM32F303CB\STM32F303CB.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -276,7 +242,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RHSJNDEG
 
-[Document15]
+[Document13]
 DocumentPath=Schlib1.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -293,7 +259,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CELUJBRT
 
-[Document16]
+[Document14]
 DocumentPath=Models\Res0603\Res0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -310,7 +276,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BRIRSXCW
 
-[Document17]
+[Document15]
 DocumentPath=Models\T491A476M006AT\T491A476M006AT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -327,7 +293,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HDITJRBK
 
-[Document18]
+[Document16]
 DocumentPath=Models\Cap0603\Cap0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -344,7 +310,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MNRQJJNY
 
-[Document19]
+[Document17]
 DocumentPath=GY9250.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -361,7 +327,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MFTIPCDH
 
-[Document20]
+[Document18]
 DocumentPath=WavePCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
