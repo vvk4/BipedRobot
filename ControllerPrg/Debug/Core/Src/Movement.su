@@ -1,2 +1,2 @@
-Movement.c:10:6:PWM_Off	4	static
-Movement.c:19:6:SetMotorPWM	16	static
+movement.c:5:6:PWM_Off	4	static
+movement.c:14:6:SetMotorPWM	16	static

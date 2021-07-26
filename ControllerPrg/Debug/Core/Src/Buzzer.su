@@ -1,1 +1,2 @@
-Buzzer.c:4:6:SetBuzzerFRQ	16	static
+buzzer.c:3:6:SetBuzzerFRQ	24	static
+buzzer.c:21:6:BuzzerOff	4	static

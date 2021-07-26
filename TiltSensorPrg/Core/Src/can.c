@@ -63,7 +63,7 @@ void TrmCAN(CAN_HandleTypeDef *hcan) {
 		}
 
 		*(float*) msgData = GyroYfl;
-		*(uint16_t*) &msgData[4] = (uint16_t)(KGyro*1000);
+		*(uint16_t*) &msgData[4] = (uint16_t) (KGyro * 1000);
 
 		HAL_CAN_AddTxMessage(hcan, &msgHeader, msgData, &mailBoxNum);
 
@@ -92,9 +92,9 @@ void ProcessCANReceivedPacket(CAN_HandleTypeDef *hcan) {
 
 		case 4:
 			FlashReadAll();
-			KGyro = (float)((uint16_t)((msgData[1] << 8) + msgData[0]));
-			KGyro=KGyro/1000;
-			KAcc=1-KGyro;
+			KGyro = (float) ((uint16_t) ((msgData[1] << 8) + msgData[0]));
+			KGyro = KGyro / 1000;
+			KAcc = 1 - KGyro;
 			FlashWriteAll();
 			FlashReadAll();
 			NVIC_SystemReset();

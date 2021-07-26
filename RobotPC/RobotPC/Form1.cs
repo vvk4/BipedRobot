@@ -33,7 +33,7 @@ namespace RobotPC
         float Tilt5X, Tilt5Y, Gyro5;
         float Tilt6X, Tilt6Y, Gyro6;
         float Tilt7X, Tilt7Y, Gyro7;
-        ushort KGyro1;
+        ushort KGyro1, WaitForCfm;
 
         List<float> Tilt1XList = new List<float>();
         List<float> Tilt1YList = new List<float>();
@@ -85,9 +85,13 @@ namespace RobotPC
         const byte SET_PWM_Motor_R2 = 15;
         const byte SET_PWM_Motor_R3 = 16;
         const byte SET_PWM_Motor_R4 = 17;
+        const byte GET_OPTIONS = 18;
+        const byte WRITE_OPTIONS = 19;
 
-        const byte DATA_PACKET = 1;
-        const byte DATA_PACKETTst = 2;
+
+
+        const byte TRM_DATA_PACKET = 1;
+        const byte TRM_CFM_PACKET = 2;
 
         public Form1()
         {
@@ -317,6 +321,35 @@ namespace RobotPC
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (WaitForCfm==1)
+            {
+                Trm();
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            TrmMass[0] = 0xff;
+            TrmMass[1] = 0xff;
+            TrmMass[2] = 1;//N
+            TrmMass[3] = GET_OPTIONS;
+            TrmMass[4] = CalcCheckSummTrm();
+            Trm();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            TrmMass[0] = 0xff;
+            TrmMass[1] = 0xff;
+            TrmMass[2] = 1;//N
+            TrmMass[3] = WRITE_OPTIONS;
+            TrmMass[4] = CalcCheckSummTrm();
+            Trm();
+
+        }
+
         private void numericUpDown9_ValueChanged(object sender, EventArgs e)
         {
             short Trmm = Decimal.ToInt16(numericUpDown9.Value);
@@ -337,6 +370,8 @@ namespace RobotPC
         {
             if (IPaddr != null)
             {
+                WaitForCfm = 1;
+
                 ep = new IPEndPoint(IPaddr, TrmPort);
 
                 byte[] sendbuf = new byte[TrmMass[2] + 4];
@@ -392,14 +427,14 @@ namespace RobotPC
 
             switch (e.ProgressPercentage)
             {
-                case DATA_PACKET:
+                case TRM_DATA_PACKET:
 
                     label38.Text = String.Format("{0:0.000}", Tilt1XList[Tilt1XList.Count - 1]);
                     label33.Text = String.Format("{0:0.000}", Tilt1YList[Tilt1XList.Count - 1]);
                     label31.Text = Gyro1List[Tilt1XList.Count - 1].ToString();
 
-                    label894.Text = String.Format("{0:0.000}", Tilt2XList[Tilt1XList.Count - 1]);  //Tilt2XList[Tilt1XList.Count - 1].ToString();
-                    label7.Text = String.Format("{0:0.000}", Tilt2YList[Tilt1XList.Count - 1]);//.ToString();
+                    label894.Text = String.Format("{0:0.000}", Tilt2XList[Tilt1XList.Count - 1]);
+                    label7.Text = String.Format("{0:0.000}", Tilt2YList[Tilt1XList.Count - 1]);
                     label9.Text = Gyro2List[Tilt1XList.Count - 1].ToString();
 
                     label18.Text = String.Format("{0:0.000}", Tilt3XList[Tilt1XList.Count - 1]);
@@ -804,7 +839,7 @@ namespace RobotPC
 
             switch (PacketRec[1])
             {
-                case DATA_PACKET:
+                case TRM_DATA_PACKET:
 
                     fixed (byte* p = &PacketRec[Cnt])
                     { Tilt1X = *(float*)p; }
@@ -940,12 +975,15 @@ namespace RobotPC
 
                     if (Gyro7List.Count == ListCount)
                     {
-                        backgroundWorker1.ReportProgress(DATA_PACKET);
+                        backgroundWorker1.ReportProgress(TRM_DATA_PACKET);
                         while (Gyro7List.Count != 0) ;
                     }
                         
 
 
+                    break;
+                case TRM_CFM_PACKET:
+                    WaitForCfm= 0;
                     break;
 
             }

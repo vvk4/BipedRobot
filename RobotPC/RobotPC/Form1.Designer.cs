@@ -155,6 +155,8 @@ namespace RobotPC
             this.button10 = new System.Windows.Forms.Button();
             this.buttonstop = new System.Windows.Forms.Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -188,6 +190,8 @@ namespace RobotPC
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
             // 
@@ -1605,9 +1609,9 @@ namespace RobotPC
             this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox4.Location = new System.Drawing.Point(501, 502);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(71, 17);
+            this.checkBox4.Size = new System.Drawing.Size(55, 17);
             this.checkBox4.TabIndex = 422;
-            this.checkBox4.Text = "Зеленый";
+            this.checkBox4.Text = "Green";
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
@@ -1618,9 +1622,9 @@ namespace RobotPC
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Location = new System.Drawing.Point(501, 478);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(71, 17);
+            this.checkBox3.Size = new System.Drawing.Size(46, 17);
             this.checkBox3.TabIndex = 421;
-            this.checkBox3.Text = "Красный";
+            this.checkBox3.Text = "Red";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
@@ -1631,9 +1635,9 @@ namespace RobotPC
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(501, 454);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(57, 17);
+            this.checkBox2.Size = new System.Drawing.Size(47, 17);
             this.checkBox2.TabIndex = 420;
-            this.checkBox2.Text = "Синий";
+            this.checkBox2.Text = "Blue";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
@@ -1642,9 +1646,9 @@ namespace RobotPC
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(795, 459);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(93, 17);
+            this.checkBox1.Size = new System.Drawing.Size(82, 17);
             this.checkBox1.TabIndex = 418;
-            this.checkBox1.Text = "Накапливать";
+            this.checkBox1.Text = "Accumulate";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -1775,10 +1779,12 @@ namespace RobotPC
             series10.Name = "Series1";
             series11.ChartArea = "ChartArea1";
             series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series11.IsVisibleInLegend = false;
             series11.Legend = "Legend1";
             series11.Name = "Series2";
             series12.ChartArea = "ChartArea1";
             series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series12.IsVisibleInLegend = false;
             series12.Legend = "Legend1";
             series12.Name = "Series3";
             this.chart1.Series.Add(series10);
@@ -1788,11 +1794,37 @@ namespace RobotPC
             this.chart1.TabIndex = 423;
             this.chart1.Text = "chart1";
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.LightGreen;
+            this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button11.Location = new System.Drawing.Point(403, 448);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(80, 23);
+            this.button11.TabIndex = 425;
+            this.button11.Text = "Get options";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.LightGreen;
+            this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button12.Location = new System.Drawing.Point(403, 472);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(80, 23);
+            this.button12.TabIndex = 424;
+            this.button12.Text = "Write options";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1154, 544);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
@@ -1966,6 +1998,8 @@ namespace RobotPC
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }
 
