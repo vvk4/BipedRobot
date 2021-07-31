@@ -25,15 +25,9 @@ namespace RobotPC
         public Socket s;
         String IPStr;
         bool StopCharts = false;
-
-        float Tilt1X, Tilt1Y, Gyro1;
-        float Tilt2X, Tilt2Y, Gyro2;
-        float Tilt3X, Tilt3Y, Gyro3;
-        float Tilt4X, Tilt4Y, Gyro4;
-        float Tilt5X, Tilt5Y, Gyro5;
-        float Tilt6X, Tilt6Y, Gyro6;
-        float Tilt7X, Tilt7Y, Gyro7;
+        int CntUDPArray;
         ushort KGyro1, WaitForCfm;
+
 
         List<float> Tilt1XList = new List<float>();
         List<float> Tilt1YList = new List<float>();
@@ -63,6 +57,28 @@ namespace RobotPC
         List<float> Tilt7YList = new List<float>();
         List<float> Gyro7List = new List<float>();
 
+        List<uint> CntSamplesList = new List<uint>();
+
+
+        List<float> GyroHipJointRList = new List<float>();
+        List<float> GyroHipJointLList = new List<float>();
+        List<float> GyroHipRList = new List<float>();
+        List<float> GyroHipLList = new List<float>();
+        List<float> GyroLowerlegRList = new List<float>();
+        List<float> GyroLowerlegLList = new List<float>();
+        List<float> GyroFootRList = new List<float>();
+        List<float> GyroFootLList = new List<float>();
+
+        List<float> YHipJointRList = new List<float>();
+        List<float> YHipJointLList = new List<float>();
+        List<float> XHipRList = new List<float>();
+        List<float> XHipLList = new List<float>();
+        List<float> XLowerLegRList = new List<float>();
+        List<float> XLowerLegLList = new List<float>();
+        List<float> XFootRList = new List<float>();
+        List<float> XFootLList = new List<float>();
+
+        
 
 
         const int ListCount = 50;
@@ -87,6 +103,7 @@ namespace RobotPC
         const byte SET_PWM_Motor_R4 = 17;
         const byte GET_OPTIONS = 18;
         const byte WRITE_OPTIONS = 19;
+        const byte CLEAR_ALL = 20;
 
 
 
@@ -107,6 +124,12 @@ namespace RobotPC
             comboBox2.SelectedIndex = 0;
             comboBox3.SelectedIndex = 0;
 
+
+            //        dataGridView1.Rows.Add();
+
+            //dataGridView1.Rows[0].Cells[0].Value = "названи";
+    //        dataGridView1.Rows[0].HeaderCell.Value = "sdfsdfsdf";
+   //         dataGridView1["Column1", dataGridView1.Rows.Count - 1].Value = "Пример 1: " + 3;
 
         }
 
@@ -323,7 +346,7 @@ namespace RobotPC
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (WaitForCfm==1)
+            if (WaitForCfm == 1)
             {
                 Trm();
             }
@@ -347,6 +370,20 @@ namespace RobotPC
             TrmMass[3] = WRITE_OPTIONS;
             TrmMass[4] = CalcCheckSummTrm();
             Trm();
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            TrmMass[0] = 0xff;
+            TrmMass[1] = 0xff;
+            TrmMass[2] = 1;//N
+            TrmMass[3] = CLEAR_ALL;
+            TrmMass[4] = CalcCheckSummTrm();
+            Trm();
+            chart1.Series[0].Points.Clear();
+            chart1.Series[1].Points.Clear();
+            chart1.Series[2].Points.Clear();
 
         }
 
@@ -393,7 +430,7 @@ namespace RobotPC
             UdpClient listener = new UdpClient(listenPort);
             IPEndPoint EP = new IPEndPoint(IPAddress.Any, listenPort);
 
-      //      listener.Client.ReceiveTimeout = 1;
+            //      listener.Client.ReceiveTimeout = 1;
 
             while (true)
             {
@@ -429,36 +466,52 @@ namespace RobotPC
             {
                 case TRM_DATA_PACKET:
 
-                    label38.Text = String.Format("{0:0.000}", Tilt1XList[Tilt1XList.Count - 1]);
-                    label33.Text = String.Format("{0:0.000}", Tilt1YList[Tilt1XList.Count - 1]);
-                    label31.Text = Gyro1List[Tilt1XList.Count - 1].ToString();
+                        label38.Text = String.Format("{0:0.000}", Tilt1XList[Tilt1XList.Count - 1]);
+                        label33.Text = String.Format("{0:0.000}", Tilt1YList[Tilt1YList.Count - 1]);
+                        label31.Text = GyroHipJointRList[GyroHipJointRList.Count - 1].ToString();
+                        label46.Text = GyroHipJointLList[GyroHipJointLList.Count - 1].ToString();
 
-                    label894.Text = String.Format("{0:0.000}", Tilt2XList[Tilt1XList.Count - 1]);
-                    label7.Text = String.Format("{0:0.000}", Tilt2YList[Tilt1XList.Count - 1]);
-                    label9.Text = Gyro2List[Tilt1XList.Count - 1].ToString();
+                        label894.Text = String.Format("{0:0.000}", Tilt2XList[Tilt2XList.Count - 1]);
+                        label7.Text = String.Format("{0:0.000}", Tilt2YList[Tilt2YList.Count - 1]);
+                        label9.Text = GyroHipLList[GyroHipLList.Count - 1].ToString();
 
-                    label18.Text = String.Format("{0:0.000}", Tilt3XList[Tilt1XList.Count - 1]);
-                    label13.Text = String.Format("{0:0.000}", Tilt3YList[Tilt1XList.Count - 1]);
-                    label11.Text = Gyro3List[Tilt1XList.Count - 1].ToString();
+                        label18.Text = String.Format("{0:0.000}", Tilt3XList[Tilt3XList.Count - 1]);
+                        label13.Text = String.Format("{0:0.000}", Tilt3YList[Tilt3YList.Count - 1]);
+                        label11.Text = GyroLowerlegLList[GyroLowerlegLList.Count - 1].ToString();
 
-                    label28.Text = String.Format("{0:0.000}", Tilt4XList[Tilt1XList.Count - 1]);
-                    label23.Text = String.Format("{0:0.000}", Tilt4YList[Tilt1XList.Count - 1]);
-                    label21.Text = Gyro4List[Tilt1XList.Count - 1].ToString();
+                        label28.Text = String.Format("{0:0.000}", Tilt4XList[Tilt4XList.Count - 1]);
+                        label23.Text = String.Format("{0:0.000}", Tilt4YList[Tilt4YList.Count - 1]);
+                        label21.Text = GyroFootLList[GyroFootLList.Count - 1].ToString();
 
-                    label68.Text = String.Format("{0:0.000}", Tilt5XList[Tilt1XList.Count - 1]);
-                    label63.Text = String.Format("{0:0.000}", Tilt5YList[Tilt1XList.Count - 1]);
-                    label61.Text = Gyro5List[Tilt1XList.Count - 1].ToString();
+                        label68.Text = String.Format("{0:0.000}", Tilt5XList[Tilt5XList.Count - 1]);
+                        label63.Text = String.Format("{0:0.000}", Tilt5YList[Tilt5YList.Count - 1]);
+                        label61.Text = GyroHipRList[GyroHipRList.Count - 1].ToString();
 
-                    label58.Text = String.Format("{0:0.000}", Tilt6XList[Tilt1XList.Count - 1]);
-                    label53.Text = String.Format("{0:0.000}", Tilt6YList[Tilt1XList.Count - 1]);
-                    label51.Text = Gyro6.ToString();
+                        label58.Text = String.Format("{0:0.000}", Tilt6XList[Tilt6XList.Count - 1]);
+                        label53.Text = String.Format("{0:0.000}", Tilt6YList[Tilt6YList.Count - 1]);
+                        label51.Text = GyroLowerlegRList[Tilt1XList.Count - 1].ToString();
 
-                    label48.Text = String.Format("{0:0.000}", Tilt7XList[Tilt1XList.Count - 1]);
-                    label43.Text = String.Format("{0:0.000}", Tilt7YList[Tilt1XList.Count - 1]);
-                    label41.Text = Gyro7List[Tilt1XList.Count - 1].ToString();
+                        label48.Text = String.Format("{0:0.000}", Tilt7XList[Tilt7XList.Count - 1]);
+                        label43.Text = String.Format("{0:0.000}", Tilt7YList[Tilt7YList.Count - 1]);
+                        label41.Text = GyroFootRList[GyroFootRList.Count - 1].ToString();
+
+
+
+                    label66.Text = String.Format("{0:0.000}", YHipJointRList[YHipJointRList.Count - 1]);
+                    label56.Text = String.Format("{0:0.000}", YHipJointLList[YHipJointLList.Count - 1]);
+                    label85.Text = String.Format("{0:0.000}", XHipRList[XHipRList.Count - 1]);
+                    label83.Text = String.Format("{0:0.000}", XHipLList[XHipLList.Count - 1]);
+
+                    label89.Text = String.Format("{0:0.000}", XLowerLegRList[XLowerLegRList.Count - 1]);
+                    label87.Text = String.Format("{0:0.000}", XLowerLegLList[XLowerLegLList.Count - 1]);
+                    label93.Text = String.Format("{0:0.000}", XFootRList[XFootRList.Count - 1]);
+                    label91.Text = String.Format("{0:0.000}", XFootLList[XFootLList.Count - 1]);
+
+
+
+
 
                     label81.Text = KGyro1.ToString();
-
 
                     int i;
                     for (i = 0; i < Tilt1XList.Count; i++)
@@ -467,142 +520,256 @@ namespace RobotPC
                         {
                             if (checkBox2.Checked)
                             {
-                                switch (comboBox1.SelectedIndex + 1)
+                                if ((i < Tilt1XList.Count)&&(i< CntSamplesList.Count))
                                 {
-                                    case 1:
-                                        chart1.Series[0].Points.Add(Tilt1XList[i]);
-                                        break;
-                                    case 2:
-                                        chart1.Series[0].Points.Add(Tilt1YList[i]);
-                                        break;
-                                    case 3:
-                                        chart1.Series[0].Points.Add(Gyro1List[i]);
-                                        break;
-                                    case 4:
-                                        chart1.Series[0].Points.Add(Tilt2XList[i]);
-                                        break;
-                                    case 5:
-                                        chart1.Series[0].Points.Add(Tilt2YList[i]);
-                                        break;
-                                    case 6:
-                                        chart1.Series[0].Points.Add(Gyro2List[i]);
-                                        break;
-                                    case 7:
-                                        chart1.Series[0].Points.Add(Tilt3XList[i]);
-                                        break;
-                                    case 8:
-                                        chart1.Series[0].Points.Add(Tilt3YList[i]);
-                                        break;
-                                    case 9:
-                                        chart1.Series[0].Points.Add(Gyro3List[i]);
-                                        break;
-                                    case 10:
-                                        chart1.Series[0].Points.Add(Tilt4XList[i]);
-                                        break;
-                                    case 11:
-                                        chart1.Series[0].Points.Add(Tilt4YList[i]);
-                                        break;
-                                    case 12:
-                                        chart1.Series[0].Points.Add(Gyro4List[i]);
-                                        break;
-                                    case 13:
-                                        chart1.Series[0].Points.Add(Tilt5XList[i]);
-                                        break;
-                                    case 14:
-                                        chart1.Series[0].Points.Add(Tilt5YList[i]);
-                                        break;
-                                    case 15:
-                                        chart1.Series[0].Points.Add(Gyro5List[i]);
-                                        break;
-                                    case 16:
-                                        chart1.Series[0].Points.Add(Tilt6XList[i]);
-                                        break;
-                                    case 17:
-                                        chart1.Series[0].Points.Add(Tilt6YList[i]);
-                                        break;
-                                    case 18:
-                                        chart1.Series[0].Points.Add(Gyro6List[i]);
-                                        break;
-                                    case 19:
-                                        chart1.Series[0].Points.Add(Tilt7XList[i]);
-                                        break;
-                                    case 20:
-                                        chart1.Series[0].Points.Add(Tilt7YList[i]);
-                                        break;
-                                    case 21:
-                                        chart1.Series[0].Points.Add(Gyro7List[i]);
-                                        break;
+                                    switch (comboBox1.SelectedIndex + 1)
+                                    {
+                                        case 1:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt1XList[i]);
+                                            break;
+                                        case 2:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt1YList[i]);
+                                            break;
+                                        case 3:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Gyro1List[i]);
+                                            break;
+                                        case 4:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt2XList[i]);
+                                            break;
+                                        case 5:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt2YList[i]);
+                                            break;
+                                        case 6:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Gyro2List[i]);
+                                            break;
+                                        case 7:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt3XList[i]);
+                                            break;
+                                        case 8:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt3YList[i]);
+                                            break;
+                                        case 9:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Gyro3List[i]);
+                                            break;
+                                        case 10:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt4XList[i]);
+                                            break;
+                                        case 11:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt4YList[i]);
+                                            break;
+                                        case 12:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Gyro4List[i]);
+                                            break;
+                                        case 13:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt5XList[i]);
+                                            break;
+                                        case 14:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt5YList[i]);
+                                            break;
+                                        case 15:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Gyro5List[i]);
+                                            break;
+                                        case 16:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt6XList[i]);
+                                            break;
+                                        case 17:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt6YList[i]);
+                                            break;
+                                        case 18:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Gyro6List[i]);
+                                            break;
+                                        case 19:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt7XList[i]);
+                                            break;
+                                        case 20:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Tilt7YList[i]);
+                                            break;
+                                        case 21:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], Gyro7List[i]);
+                                            break;
+                                        case 22:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], GyroHipJointRList[i]);
+                                            break;
+                                        case 23:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], GyroHipJointLList[i]);
+                                            break;
+                                        case 24:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], GyroHipRList[i]);
+                                            break;
+                                        case 25:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], GyroHipLList[i]);
+                                            break;
+                                        case 26:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], GyroLowerlegRList[i]);
+                                            break;
+                                        case 27:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], GyroLowerlegLList[i]);
+                                            break;
+                                        case 28:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], GyroFootRList[i]);
+                                            break;
+                                        case 29:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], GyroFootLList[i]);
+                                            break;
+                                        case 30:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], YHipJointRList[i]);
+                                            break;
+                                        case 31:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], YHipJointLList[i]);
+                                            break;
+                                        case 32:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], XHipRList[i]);
+                                            break;
+                                        case 33:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], XHipLList[i]);
+                                            break;
+                                        case 34:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], XLowerLegRList[i]);
+                                            break;
+                                        case 35:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], XLowerLegLList[i]);
+                                            break;
+                                        case 36:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], XFootRList[i]);
+                                            break;
+                                        case 37:
+                                            chart1.Series[0].Points.AddXY(CntSamplesList[i], XFootLList[i]);
+                                            break;
+
+
+
+
+
+
+
+
+
+                                    }
                                 }
                             }
 
 
                             if (checkBox3.Checked)
                             {
-                                switch (comboBox2.SelectedIndex + 1)
+                                if (i < Tilt1XList.Count)
                                 {
-                                    case 1:
-                                        chart1.Series[1].Points.Add(Tilt1XList[i]);
-                                        break;
-                                    case 2:
-                                        chart1.Series[1].Points.Add(Tilt1YList[i]);
-                                        break;
-                                    case 3:
-                                        chart1.Series[1].Points.Add(Gyro1List[i]);
-                                        break;
-                                    case 4:
-                                        chart1.Series[1].Points.Add(Tilt2XList[i]);
-                                        break;
-                                    case 5:
-                                        chart1.Series[1].Points.Add(Tilt2YList[i]);
-                                        break;
-                                    case 6:
-                                        chart1.Series[1].Points.Add(Gyro2List[i]);
-                                        break;
-                                    case 7:
-                                        chart1.Series[1].Points.Add(Tilt3XList[i]);
-                                        break;
-                                    case 8:
-                                        chart1.Series[1].Points.Add(Tilt3YList[i]);
-                                        break;
-                                    case 9:
-                                        chart1.Series[1].Points.Add(Gyro3List[i]);
-                                        break;
-                                    case 10:
-                                        chart1.Series[1].Points.Add(Tilt4XList[i]);
-                                        break;
-                                    case 11:
-                                        chart1.Series[1].Points.Add(Tilt4YList[i]);
-                                        break;
-                                    case 12:
-                                        chart1.Series[1].Points.Add(Gyro4List[i]);
-                                        break;
-                                    case 13:
-                                        chart1.Series[1].Points.Add(Tilt5XList[i]);
-                                        break;
-                                    case 14:
-                                        chart1.Series[1].Points.Add(Tilt5YList[i]);
-                                        break;
-                                    case 15:
-                                        chart1.Series[1].Points.Add(Gyro5List[i]);
-                                        break;
-                                    case 16:
-                                        chart1.Series[1].Points.Add(Tilt6XList[i]);
-                                        break;
-                                    case 17:
-                                        chart1.Series[1].Points.Add(Tilt6YList[i]);
-                                        break;
-                                    case 18:
-                                        chart1.Series[1].Points.Add(Gyro6List[i]);
-                                        break;
-                                    case 19:
-                                        chart1.Series[1].Points.Add(Tilt7XList[i]);
-                                        break;
-                                    case 20:
-                                        chart1.Series[1].Points.Add(Tilt7YList[i]);
-                                        break;
-                                    case 21:
-                                        chart1.Series[1].Points.Add(Gyro7List[i]);
-                                        break;
+                                    switch (comboBox2.SelectedIndex + 1)
+                                    {
+                                        case 1:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt1XList[i]);
+                                            break;
+                                        case 2:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt1YList[i]);
+                                            break;
+                                        case 3:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Gyro1List[i]);
+                                            break;
+                                        case 4:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt2XList[i]);
+                                            break;
+                                        case 5:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt2YList[i]);
+                                            break;
+                                        case 6:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Gyro2List[i]);
+                                            break;
+                                        case 7:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt3XList[i]);
+                                            break;
+                                        case 8:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt3YList[i]);
+                                            break;
+                                        case 9:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Gyro3List[i]);
+                                            break;
+                                        case 10:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt4XList[i]);
+                                            break;
+                                        case 11:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt4YList[i]);
+                                            break;
+                                        case 12:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Gyro4List[i]);
+                                            break;
+                                        case 13:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt5XList[i]);
+                                            break;
+                                        case 14:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt5YList[i]);
+                                            break;
+                                        case 15:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Gyro5List[i]);
+                                            break;
+                                        case 16:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt6XList[i]);
+                                            break;
+                                        case 17:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt6YList[i]);
+                                            break;
+                                        case 18:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Gyro6List[i]);
+                                            break;
+                                        case 19:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt7XList[i]);
+                                            break;
+                                        case 20:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Tilt7YList[i]);
+                                            break;
+                                        case 21:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], Gyro7List[i]);
+                                            break;
+                                        case 22:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], GyroHipJointRList[i]);
+                                            break;
+                                        case 23:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], GyroHipJointLList[i]);
+                                            break;
+                                        case 24:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], GyroHipRList[i]);
+                                            break;
+                                        case 25:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], GyroHipLList[i]);
+                                            break;
+                                        case 26:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], GyroLowerlegRList[i]);
+                                            break;
+                                        case 27:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], GyroLowerlegLList[i]);
+                                            break;
+                                        case 28:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], GyroFootRList[i]);
+                                            break;
+                                        case 29:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], GyroFootLList[i]);
+                                            break;
+                                        case 30:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], YHipJointRList[i]);
+                                            break;
+                                        case 31:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], YHipJointLList[i]);
+                                            break;
+                                        case 32:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], XHipRList[i]);
+                                            break;
+                                        case 33:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], XHipLList[i]);
+                                            break;
+                                        case 34:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], XLowerLegRList[i]);
+                                            break;
+                                        case 35:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], XLowerLegLList[i]);
+                                            break;
+                                        case 36:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], XFootRList[i]);
+                                            break;
+                                        case 37:
+                                            chart1.Series[1].Points.AddXY(CntSamplesList[i], XFootLList[i]);
+                                            break;
+
+
+
+                                    }
                                 }
                             }
 
@@ -610,71 +777,127 @@ namespace RobotPC
 
                             if (checkBox4.Checked)
                             {
-                                switch (comboBox3.SelectedIndex + 1)
+                                if (i < Tilt1XList.Count)
                                 {
-                                    case 1:
-                                        chart1.Series[2].Points.Add(Tilt1XList[i]);
-                                        break;
-                                    case 2:
-                                        chart1.Series[2].Points.Add(Tilt1YList[i]);
-                                        break;
-                                    case 3:
-                                        chart1.Series[2].Points.Add(Gyro1List[i]);
-                                        break;
-                                    case 4:
-                                        chart1.Series[2].Points.Add(Tilt2XList[i]);
-                                        break;
-                                    case 5:
-                                        chart1.Series[2].Points.Add(Tilt2YList[i]);
-                                        break;
-                                    case 6:
-                                        chart1.Series[2].Points.Add(Gyro2List[i]);
-                                        break;
-                                    case 7:
-                                        chart1.Series[2].Points.Add(Tilt3XList[i]);
-                                        break;
-                                    case 8:
-                                        chart1.Series[2].Points.Add(Tilt3YList[i]);
-                                        break;
-                                    case 9:
-                                        chart1.Series[2].Points.Add(Gyro3List[i]);
-                                        break;
-                                    case 10:
-                                        chart1.Series[2].Points.Add(Tilt4XList[i]);
-                                        break;
-                                    case 11:
-                                        chart1.Series[2].Points.Add(Tilt4YList[i]);
-                                        break;
-                                    case 12:
-                                        chart1.Series[2].Points.Add(Gyro4List[i]);
-                                        break;
-                                    case 13:
-                                        chart1.Series[2].Points.Add(Tilt5XList[i]);
-                                        break;
-                                    case 14:
-                                        chart1.Series[2].Points.Add(Tilt5YList[i]);
-                                        break;
-                                    case 15:
-                                        chart1.Series[2].Points.Add(Gyro5List[i]);
-                                        break;
-                                    case 16:
-                                        chart1.Series[2].Points.Add(Tilt6XList[i]);
-                                        break;
-                                    case 17:
-                                        chart1.Series[2].Points.Add(Tilt6YList[i]);
-                                        break;
-                                    case 18:
-                                        chart1.Series[2].Points.Add(Gyro6List[i]);
-                                        break;
-                                    case 19:
-                                        chart1.Series[2].Points.Add(Tilt7XList[i]);
-                                        break;
-                                    case 20:
-                                        chart1.Series[2].Points.Add(Tilt7YList[i]);
-                                        break;
-                                    case 21:
-                                        chart1.Series[2].Points.Add(Gyro7List[i]);
-                                        break;
+                                    switch (comboBox3.SelectedIndex + 1)
+                                    {
+                                        case 1:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt1XList[i]);
+                                            break;
+                                        case 2:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt1YList[i]);
+                                            break;
+                                        case 3:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Gyro1List[i]);
+                                            break;
+                                        case 4:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt2XList[i]);
+                                            break;
+                                        case 5:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt2YList[i]);
+                                            break;
+                                        case 6:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Gyro2List[i]);
+                                            break;
+                                        case 7:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt3XList[i]);
+                                            break;
+                                        case 8:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt3YList[i]);
+                                            break;
+                                        case 9:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Gyro3List[i]);
+                                            break;
+                                        case 10:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt4XList[i]);
+                                            break;
+                                        case 11:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt4YList[i]);
+                                            break;
+                                        case 12:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Gyro4List[i]);
+                                            break;
+                                        case 13:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt5XList[i]);
+                                            break;
+                                        case 14:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt5YList[i]);
+                                            break;
+                                        case 15:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Gyro5List[i]);
+                                            break;
+                                        case 16:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt6XList[i]);
+                                            break;
+                                        case 17:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt6YList[i]);
+                                            break;
+                                        case 18:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Gyro6List[i]);
+                                            break;
+                                        case 19:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt7XList[i]);
+                                            break;
+                                        case 20:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Tilt7YList[i]);
+                                            break;
+                                        case 21:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], Gyro7List[i]);
+                                            break;
+                                        case 22:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], GyroHipJointRList[i]);
+                                            break;
+                                        case 23:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], GyroHipJointLList[i]);
+                                            break;
+                                        case 24:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], GyroHipRList[i]);
+                                            break;
+                                        case 25:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], GyroHipLList[i]);
+                                            break;
+                                        case 26:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], GyroLowerlegRList[i]);
+                                            break;
+                                        case 27:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], GyroLowerlegLList[i]);
+                                            break;
+                                        case 28:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], GyroFootRList[i]);
+                                            break;
+                                        case 29:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], GyroFootLList[i]);
+                                            break;
+                                        case 30:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], YHipJointRList[i]);
+                                            break;
+                                        case 31:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], YHipJointLList[i]);
+                                            break;
+                                        case 32:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], XHipRList[i]);
+                                            break;
+                                        case 33:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], XHipLList[i]);
+                                            break;
+                                        case 34:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], XLowerLegRList[i]);
+                                            break;
+                                        case 35:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], XLowerLegLList[i]);
+                                            break;
+                                        case 36:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], XFootRList[i]);
+                                            break;
+                                        case 37:
+                                            chart1.Series[2].Points.AddXY(CntSamplesList[i], XFootLList[i]);
+                                            break;
+
+
+
+
+
+                                    }
                                 }
                             }
                         }
@@ -711,6 +934,25 @@ namespace RobotPC
                     Tilt7XList.Clear();
                     Tilt7YList.Clear();
                     Gyro7List.Clear();
+                    GyroHipJointRList.Clear();
+                    GyroHipJointLList.Clear();
+                    GyroHipRList.Clear();
+                    GyroHipLList.Clear();
+                    GyroLowerlegRList.Clear();
+                    GyroLowerlegLList.Clear();
+                    GyroFootRList.Clear();
+                    GyroFootLList.Clear();
+                    CntSamplesList.Clear();
+                    YHipJointRList.Clear();
+                    YHipJointLList.Clear();
+                    XHipRList.Clear();
+                    XHipLList.Clear();
+                    XLowerLegRList.Clear();
+                    XLowerLegLList.Clear();
+                    XFootRList.Clear();
+                    XFootLList.Clear();
+
+
 
 
                     break;
@@ -835,142 +1077,64 @@ namespace RobotPC
 
         unsafe void ProcessPacket()
         {
-            int Cnt = 2;
+            CntUDPArray = 2;
 
             switch (PacketRec[1])
             {
                 case TRM_DATA_PACKET:
 
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt1X = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt1Y = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Gyro1 = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
 
 
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt2X = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt2Y = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Gyro2 = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
+                    fixed (byte* p = &PacketRec[CntUDPArray])
+                    { CntSamplesList.Add(*(uint*)p); }
+                    CntUDPArray = CntUDPArray + sizeof(uint);
 
 
+                    GetUDPArrayFloat(Tilt1XList);
+                    GetUDPArrayFloat(Tilt1YList);
+                    GetUDPArrayFloat(Gyro1List);
+                    GetUDPArrayFloat(Tilt2XList);
+                    GetUDPArrayFloat(Tilt2YList);
+                    GetUDPArrayFloat(Gyro2List);
+                    GetUDPArrayFloat(Tilt3XList);
+                    GetUDPArrayFloat(Tilt3YList);
+                    GetUDPArrayFloat(Gyro3List);
 
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt3X = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
+                    GetUDPArrayFloat(Tilt4XList);
+                    GetUDPArrayFloat(Tilt4YList);
+                    GetUDPArrayFloat(Gyro4List);
+                    GetUDPArrayFloat(Tilt5XList);
+                    GetUDPArrayFloat(Tilt5YList);
+                    GetUDPArrayFloat(Gyro5List);
+                    GetUDPArrayFloat(Tilt6XList);
+                    GetUDPArrayFloat(Tilt6YList);
+                    GetUDPArrayFloat(Gyro6List);
+                    GetUDPArrayFloat(Tilt7XList);
+                    GetUDPArrayFloat(Tilt7YList);
+                    GetUDPArrayFloat(Gyro7List);
 
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt3Y = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Gyro3 = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-
-
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt4X = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt4Y = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Gyro4 = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt5X = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt5Y = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Gyro5 = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt6X = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt6Y = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Gyro6 = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt7X = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Tilt7Y = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-                    fixed (byte* p = &PacketRec[Cnt])
-                    { Gyro7 = *(float*)p; }
-                    Cnt = Cnt + sizeof(float);
-
-
-                    fixed (byte* p = &PacketRec[Cnt])
+                    fixed (byte* p = &PacketRec[CntUDPArray])
                     { KGyro1 = *(ushort*)p; }
-                    Cnt = Cnt + sizeof(ushort);
+                    CntUDPArray = CntUDPArray + sizeof(ushort);
 
+                    GetUDPArrayFloat(GyroHipJointRList);
+                    GetUDPArrayFloat(GyroHipJointLList);
+                    GetUDPArrayFloat(GyroHipRList);
+                    GetUDPArrayFloat(GyroHipLList);
+                    GetUDPArrayFloat(GyroLowerlegRList);
+                    GetUDPArrayFloat(GyroLowerlegLList);
+                    GetUDPArrayFloat(GyroFootRList);
+                    GetUDPArrayFloat(GyroFootLList);
 
-                    Tilt1XList.Add(Tilt1X);
-                    Tilt1YList.Add(Tilt1Y);
-                    Gyro1List.Add(Gyro1);
+                    GetUDPArrayFloat(YHipJointRList);
+                    GetUDPArrayFloat(YHipJointLList);
+                    GetUDPArrayFloat(XHipRList);
+                    GetUDPArrayFloat(XHipLList);
+                    GetUDPArrayFloat(XLowerLegRList);
+                    GetUDPArrayFloat(XLowerLegLList);
+                    GetUDPArrayFloat(XFootRList);
+                    GetUDPArrayFloat(XFootLList);
 
-                    Tilt2XList.Add(Tilt2X);
-                    Tilt2YList.Add(Tilt2Y);
-                    Gyro2List.Add(Gyro2);
-
-                    Tilt3XList.Add(Tilt3X);
-                    Tilt3YList.Add(Tilt3Y);
-                    Gyro3List.Add(Gyro3);
-
-                    Tilt4XList.Add(Tilt4X);
-                    Tilt4YList.Add(Tilt4Y);
-                    Gyro4List.Add(Gyro4);
-
-                    Tilt5XList.Add(Tilt5X);
-                    Tilt5YList.Add(Tilt5Y);
-                    Gyro5List.Add(Gyro5);
-
-                    Tilt6XList.Add(Tilt6X);
-                    Tilt6YList.Add(Tilt6Y);
-                    Gyro6List.Add(Gyro6);
-
-                    Tilt7XList.Add(Tilt7X);
-                    Tilt7YList.Add(Tilt7Y);
-                    Gyro7List.Add(Gyro7);
 
 
                     if (Gyro7List.Count == ListCount)
@@ -978,16 +1142,26 @@ namespace RobotPC
                         backgroundWorker1.ReportProgress(TRM_DATA_PACKET);
                         while (Gyro7List.Count != 0) ;
                     }
-                        
+
 
 
                     break;
                 case TRM_CFM_PACKET:
-                    WaitForCfm= 0;
+                    WaitForCfm = 0;
                     break;
 
             }
 
+        }
+
+       
+        unsafe void GetUDPArrayFloat(List<float> Lst)
+        {
+            fixed (byte* p = &PacketRec[CntUDPArray])
+            {
+                Lst.Add(*(float*)p);
+            }
+            CntUDPArray = CntUDPArray + sizeof(float);
         }
     }
 

@@ -122,6 +122,7 @@ uint8_t Can_TxMessage(CAN_HandleTypeDef *phcan, uint8_t ide, uint32_t id,
 	return 0;
 }
 
+
 void processCAN2Packet(CAN_HandleTypeDef *hcan) {
 	uint8_t Rxbuff[8];
 	CAN_RxHeaderTypeDef RxHeader;
@@ -133,56 +134,88 @@ void processCAN2Packet(CAN_HandleTypeDef *hcan) {
 		case TILT_SENSOR_ADDR:
 			Tilt1X = *(float*) Rxbuff;
 			Tilt1Y = *(float*) &Rxbuff[4];
+			YHipJointL=90+Tilt1Y-Tilt2Y;
+			YHipJointR=90-Tilt1Y+Tilt5Y;
+			XHipL=90-Tilt1X+Tilt2X;
+			XHipR=90-Tilt1X+Tilt5X;
 			break;
 		case (TILT_SENSOR_ADDR + 1):
 			Gyro1 = *(float*) Rxbuff;
 			Gyro1Y = *(float*) &Rxbuff[4];
-			//KGyro1=*(uint16_t*)&Rxbuff[4];
+			GyroHipJointR = Gyro1Y - Gyro5Y;
+			GyroHipJointL = Gyro1Y - Gyro2Y;
+			GyroHipR = Gyro1 - Gyro5;
+			GyroHipL = Gyro1 - Gyro2;
 			break;
 		case TILT_SENSOR_HIP_L_ADDR:
 			Tilt2X = *(float*) Rxbuff;
 			Tilt2Y = *(float*) &Rxbuff[4];
+			YHipJointL=90+Tilt1Y-Tilt2Y;
+			XHipL=90-Tilt1X+Tilt2X;
+			XLowerLegL=180+Tilt2X-Tilt3X;
 			break;
 		case (TILT_SENSOR_HIP_L_ADDR + 1):
 			Gyro2 = *(float*) Rxbuff;
 			Gyro2Y = *(float*) &Rxbuff[4];
+			GyroHipJointL = Gyro1Y - Gyro2Y;
+			GyroHipL = Gyro1 - Gyro2;
+			GyroLowerlegL = Gyro2 - Gyro3;
 			break;
 		case TILT_SENSOR_LOWERLEG_L_ADDR:
 			Tilt3X = *(float*) Rxbuff;
 			Tilt3Y = *(float*) &Rxbuff[4];
+			XLowerLegL=180+Tilt2X-Tilt3X;
+			XFootL=90-Tilt3X+Tilt4X;
 			break;
 		case (TILT_SENSOR_LOWERLEG_L_ADDR + 1):
 			Gyro3 = *(float*) Rxbuff;
+			GyroHipL = Gyro2 - Gyro3;
+			GyroLowerlegL = Gyro2 - Gyro3;
+			GyroFootL = Gyro3 - Gyro4;
 			break;
 		case TILT_SENSOR_FOOT_L_ADDR:
 			Tilt4X = *(float*) Rxbuff;
 			Tilt4Y = *(float*) &Rxbuff[4];
+			XFootL=90-Tilt3X+Tilt4X;
 			break;
 		case (TILT_SENSOR_FOOT_L_ADDR + 1):
 			Gyro4 = *(float*) Rxbuff;
+			GyroFootL = Gyro3 - Gyro4;
 			break;
 		case TILT_SENSOR_HIP_R_ADDR:
 			Tilt5X = *(float*) Rxbuff;
 			Tilt5Y = *(float*) &Rxbuff[4];
+			YHipJointR=90-Tilt1Y+Tilt5Y;
+			XHipR=90-Tilt1X+Tilt5X;
+			XLowerLegR=180+Tilt5X-Tilt6X;
 			break;
 		case (TILT_SENSOR_HIP_R_ADDR + 1):
 			Gyro5 = *(float*) Rxbuff;
 			Gyro5Y = *(float*) &Rxbuff[4];
+			GyroHipJointR = Gyro1Y - Gyro5Y;
+			GyroHipR = Gyro1 - Gyro5;
+			GyroLowerlegR = Gyro5 - Gyro6;
 			break;
 		case TILT_SENSOR_LOWERLEG_R_ADDR:
 			Tilt6X = *(float*) Rxbuff;
 			Tilt6Y = *(float*) &Rxbuff[4];
+			XLowerLegR=180+Tilt5X-Tilt6X;
+			XFootR=90-Tilt6X+Tilt7X;
 			break;
 		case (TILT_SENSOR_LOWERLEG_R_ADDR + 1):
 			Gyro6 = *(float*) Rxbuff;
+			GyroLowerlegR = Gyro5 - Gyro6;
+			GyroFootR = Gyro6 - Gyro7;
 			break;
 		case TILT_SENSOR_FOOT_R_ADDR:
 			Tilt7X = *(float*) Rxbuff;
 			Tilt7Y = *(float*) &Rxbuff[4];
+			XFootR=90-Tilt6X+Tilt7X;
 			break;
 		case (TILT_SENSOR_FOOT_R_ADDR + 1):
 			Gyro7 = *(float*) Rxbuff;
 			KGyro1 = *(uint16_t*) &Rxbuff[4];
+			GyroFootR = Gyro6 - Gyro7;
 			break;
 		}
 	}

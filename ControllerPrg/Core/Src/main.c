@@ -72,6 +72,10 @@ const osThreadAttr_t CANTask_attributes = { .name = "CANTask", .stack_size = 128
 osThreadId_t CfmPacketHandle;
 const osThreadAttr_t CfmPacket_attributes = { .name = "CfmPacket", .stack_size =
 		128 * 4, .priority = (osPriority_t) osPriorityLow, };
+/* Definitions for PITask */
+osThreadId_t PITaskHandle;
+const osThreadAttr_t PITask_attributes = { .name = "PITask", .stack_size = 128
+		* 4, .priority = (osPriority_t) osPriorityNormal, };
 /* Definitions for UARTTrmBinarySem */
 osSemaphoreId_t UARTTrmBinarySemHandle;
 const osSemaphoreAttr_t UARTTrmBinarySem_attributes = { .name =
@@ -109,6 +113,7 @@ void StartDefaultTask(void *argument);
 void StartUARTTx(void *argument);
 void CANEntry(void *argument);
 void StartCfmPacket(void *argument);
+void StartTaskPI(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -198,6 +203,9 @@ int main(void) {
 
 	/* creation of CfmPacket */
 	CfmPacketHandle = osThreadNew(StartCfmPacket, NULL, &CfmPacket_attributes);
+
+	/* creation of PITask */
+	PITaskHandle = osThreadNew(StartTaskPI, NULL, &PITask_attributes);
 
 	/* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
@@ -1110,6 +1118,26 @@ void StartCfmPacket(void *argument) {
 		osDelay(1);
 	}
 	/* USER CODE END StartCfmPacket */
+}
+
+/* USER CODE BEGIN Header_StartTaskPI */
+/**
+ * @brief Function implementing the PITask thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartTaskPI */
+void StartTaskPI(void *argument) {
+	/* USER CODE BEGIN StartTaskPI */
+	/* Infinite loop */
+	for (;;) {
+		CntSamples++;
+
+		CalculateAngles();
+
+		osDelay(5);
+	}
+	/* USER CODE END StartTaskPI */
 }
 
 /**

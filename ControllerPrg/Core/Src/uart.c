@@ -139,6 +139,9 @@ void ProcessUARTCmd(void) {
 		FlashWriteAll();
 		SetBuzzerFRQ(1000, 500);
 		break;
+	case CLEAR_ALL:
+		CntSamples=0;
+		break;
 
 	}
 }
@@ -149,6 +152,9 @@ void TrmDataPacketUART(UART_HandleTypeDef *huart) {
 	UART2TransmittArray[0] = 0xff;
 	UART2TransmittArray[1] = 0xff;
 	UART2TransmittArray[3] = TRM_DATA_PACKET; //CMD
+
+	*(uint32_t*) &UART2TransmittArray[Cnt] = CntSamples;
+	Cnt = Cnt + sizeof(uint32_t);
 
 	*(float*) &UART2TransmittArray[Cnt] = Tilt1X;
 	Cnt = Cnt + sizeof(float);
@@ -201,6 +207,42 @@ void TrmDataPacketUART(UART_HandleTypeDef *huart) {
 
 	*(uint16_t*) &UART2TransmittArray[Cnt] = KGyro1;
 	Cnt = Cnt + sizeof(uint16_t);
+
+	*(float*) &UART2TransmittArray[Cnt] = GyroHipJointR;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = GyroHipJointL;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = GyroHipR;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = GyroHipL;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = GyroLowerlegR;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = GyroLowerlegL;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = GyroFootR;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = GyroFootL;
+	Cnt = Cnt + sizeof(float);
+
+	*(float*) &UART2TransmittArray[Cnt] = YHipJointR;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = YHipJointL;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = XHipR;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = XHipL;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = XLowerLegR;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = XLowerLegL;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = XFootR;
+	Cnt = Cnt + sizeof(float);
+	*(float*) &UART2TransmittArray[Cnt] = XFootL;
+	Cnt = Cnt + sizeof(float);
+
+
 
 	UART2TransmittArray[2] = Cnt - 3;
 

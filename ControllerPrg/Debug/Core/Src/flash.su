@@ -1,6 +1,6 @@
-flash.c:10:6:FlashWriteAll	40	static
-flash.c:40:6:FlashReadAll	16	static
-flash.c:52:6:OptionsArrayAddFloat	16	static
-flash.c:57:7:OptionsArrayGetFloat	16	static
-flash.c:63:6:OptionsToArray	16	static
-flash.c:80:6:ArrayToOptions	16	static,ignoring_inline_asm
+flash.c:9:6:FlashWriteAll	40	static
+flash.c:39:6:FlashReadAll	16	static
+flash.c:51:6:OptionsArrayAddFloat	16	static
+flash.c:56:7:OptionsArrayGetFloat	16	static
+flash.c:62:6:OptionsToArray	16	static
+flash.c:79:6:ArrayToOptions	16	static,ignoring_inline_asm
